@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/principal_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Principal"/>
+
+        <EditText
+            android:id="@+id/interest_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="%"/>
+
+        <EditText
+            android:id="@+id/n_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="In Months"/>
+
+        <TextView
+            android:id="@+id/tv_emi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:layout_margin="15dp"
+            android:text="0"
+            android:gravity="center"/>
+
+
+        <Button
+            android:onClick="cal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Calculate"
+            android:textColor="@android:color/white"
+            android:background="@android:color/holo_blue_dark"/>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
